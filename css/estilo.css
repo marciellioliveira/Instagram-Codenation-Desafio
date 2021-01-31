@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: #FAFAFA;
+	color: #000;
+	padding-top: 56px;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 728px) {
+	.container {
+		width: 728px;
+	}
+}
+
+.topo {
+	width: 100%;
+	backface-visibility: hidden;
+	background-color: #ffffff;
+	left: 0;
+	top: 0;
+	padding: 8px 16px;
+	position: fixed;	
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.topo .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.topo .topo__logo {
+	display: inline-block;
+	height: 40px;
+}
+
+.topo .topo__logo img {
+	height: 100%;
+}
+
+.topo__icone {
+	font-size: 1.6rem;
+}
+
+.thumb__usuario {
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.thumb__usuario__wrapper {
+	border-radius: 100%;
+	border: 2px solid #ffffff;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.thumb__usuario img {
+	height: 100%;
+	width: 100%;
+}
+
+.thumb__usuario--Novo {
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+}
+
+.historias {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	padding: 16px 0;
+}
+
+.container__historias {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.historias .thumb__usuario {
+	width: 78px;
+	height: 78px;
+	margin: 0 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.historias .thumb__usuario__wrapper {
+	height: 72px;
+	width: 72px;
+}
+
+/* FEED */
+.feed {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+@media screen and (min-width: 728px) {
+	.feed {
+		padding: 16px 0;
+	}
+}
+
+.poste {
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.poste__header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+.poste__header .usuario {
+	display: flex;
+	align-items: center;
+}
+
+.poste__header .usuario__thumb img{
+	height: 40px;
+	margin-right: 8px;
+	width: 40px;
+	border-radius: 100%;
+}
+
+.poste__header .nome__usuario {
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.poste__context {
+	font-size: 1.4rem;
+}
+
+.poste__figure {
+	overflow: hidden;
+	margin: 0;
+	height: auto;
+	width: 100%;
+}
+
+.poste__figure img {
+	width: 100%;
+}
+
+.controles__poste {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.controle__poste {
+	font-size: 2.4rem;
+	margin:0 8px;
+}
+
+.controle__poste:last-of-type {
+	justify-self: flex-end;
+	margin-left: auto;
+}
+
+.poste__status {
+	display: flex;
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.poste__status .usuario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.poste__status .usuario span {
+	font-size: 1.2rem;
+}
+
+.poste__status .usuario__thumb img {
+	height: 30px;
+	width: 30px;
+	margin-right: 8px;
+	border-radius: 100%;
+}
